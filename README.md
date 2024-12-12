@@ -47,28 +47,13 @@ To produce sound, I am using a Digital-to-Analog Converter (MCP4921) for variabl
 # Results
 ## Verification
 Here is a video of the Test sequences I used to verify that the correct frequencies are played and to verify volume control:
-<video controls>
-    <source src="./Results/Test.mp4">
-</video>
+
+[Link to Video](Results/Test.mp4)
 
 ## Demonstration
-Here are a few samples of demo songs, I've included both a camera recording, and a recording of the raw audio signal:
+~~Here are a few samples of demo songs, I've included both a camera recording, and a recording of the raw audio signal:~~
 
-- Legend of Zelda Overworld Theme:
-<video controls><source src="./Results/LegendOfZeldaOverworld.mp4"></video>
-<audio controls><source src="./Results/LegendOfZeldaOverworld.mp3"></audio>
-
-- Megalovania:
-<video controls><source src="./Results/Megalovania.mp4"></video>
-<audio controls><source src="./Results/Megalovania.mp3"></audio>
-
-- Lavender Town:
-<video controls><source src="./Results/LavenderTown.mp4"></video>
-<audio controls><source src="./Results/LavenderTown.mp3"></audio>
-
-- Pallet Town:
-<video controls><source src="./Results/PalletTown.mp4"></video>
-<audio controls><source src="./Results/PalletTown.mp3"></audio>
+I was unable to embed the videos and audio but the files can be found [here](Results).
 
 ## Comments on the Development
 In the end I am quite pleased with the results I had included a triangle voice in my requirements but that did not end up being implemented, I may come back to do that. When initially planning this project I had planed to use a series of resister and output four bits to create the volume control but I decided to switch to a DAC for more consistent results and so I would not have to fiddle with getting the resistors all connected. In the process of developing this I learned quite a bit about how the PIC processor works and some of the more nuanced things about memory access and pointers. I had at one point been examining the assembly code for optimization and curiosity.
