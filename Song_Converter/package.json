@@ -1,0 +1,20 @@
+{
+  "name": "song-converter",
+  "version": "1.0.0",
+  "description": "For the term project I am doing a music box.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "generate": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "midi-file": "^1.2.4"
+  }
+}

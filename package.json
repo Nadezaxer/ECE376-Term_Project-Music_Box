@@ -1,0 +1,16 @@
+{
+  "name": "term-project---music-box",
+  "version": "1.0.0",
+  "description": "For the term project I am doing a music box.",
+  "main": " ",
+  "scripts": {
+    "build_C": "cd C_Code && xc8-cc -mcpu=pic18f4620 -mconst-data-in-progmem -mcodeoffset=\"0x800\" main.c",
+    "build_TS": "cd Song_Converter && npm run build",
+    "compile_MusicData": "cd Song_Converter && npm run generate && cd ../ && mv Song_Converter/MusicData.c C_Code/",
+    "build" : "npm run build_TS && npm run compile_MusicData && npm run build_C",
+    "startCodeUploader" : "cd PIC_CodeUploader && npm run start",
+    "install": "cd PIC_CodeUploader && npm install && cd ../Song_Converter &&npm install"
+  },
+  "author": "",
+  "license": "ISC"
+}
